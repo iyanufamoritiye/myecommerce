@@ -24,7 +24,7 @@ const ForYou = () => {
         </button>
       </div>
 
-      <div className="flex justify-between xs:flex-col sm:flex-col">
+      <div className="flex justify-between xs:flex-col sm:flex-col xs:items-center sm:items-center xs:mt-4">
         <ItemCard
           review={true}
           discount={35}

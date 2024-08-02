@@ -13,7 +13,7 @@ const BestProduct = () => {
         <div className="h-8 w-4 bg-red-600 rounded-md"></div>
         <h3 className="text-base font-normal text-red-600">This Month</h3>
       </div>
-      <div className=" flex items-center  justify-between mt-6 mb-10 xs:flex-col">
+      <div className=" flex items-center  justify-between mt-6 mb-10 xs:flex-col sm:flex-col xs:items-center sm:items-center xs:mt-4">
         <h1 className="text-4xl text-start font-normal text-gray-950 ">
           Best Selling Products
         </h1>
@@ -25,7 +25,7 @@ const BestProduct = () => {
           View All
         </button>
       </div>
-      <div className="flex justify-between xs:flex-col sm:flex-col ">
+      <div className="flex justify-between xs:flex-col sm:flex-col xs:items-center sm:items-center xs:mt-4">
         <ItemCard
           review={true}
           wishlist={true}
