@@ -25,7 +25,7 @@ const BestProduct = () => {
           View All
         </button>
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between xs:flex-col sm:flex-col ">
         <ItemCard
           review={true}
           wishlist={true}

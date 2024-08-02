@@ -44,7 +44,7 @@ const ProductDetails = ({ initialCount = 1, min = 1, max = 99, onChange }) => {
   return (
     <div>
       <Header wishlist={true} cart={true} account={true} />
-      <div className=" w-screen mt-12 mb-24 px-24">
+      <div className=" w-screen mt-12 mb-24 px-24 sm:px-6 md:px-8">
         <div className="m">
           <p className="mb-4 text-start">
             <span className="text-sm text-gray-500 font-normal mr-2">Home</span>
