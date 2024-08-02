@@ -26,7 +26,7 @@ const FlashSales = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between xs:flex-col sm:flex-col xs:justify-center sm:justify-center ">
+      <div className="flex justify-between xs:flex-col sm:flex-col xs:item-center sm:item-center ">
         <ItemCard
           review={true}
           wishlist={true}
