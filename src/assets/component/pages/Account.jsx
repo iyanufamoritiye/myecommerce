@@ -66,7 +66,7 @@ const Account = () => {
     <div>
       <Header wishlist={true} cart={true} account={true} />
       <div className=" w-screen  text-start  mt-12 px-24 mb-28">
-        <div>
+        <div className="flex justify-between">
           <div>
             <p className="mb-4 ">
               <span className="text-sm text-gray-500 font-normal mr-2">
@@ -76,8 +76,9 @@ const Account = () => {
               <span className="text-sm font-normal ">Cart</span>
             </p>
           </div>
-          <h2 className="text-2xl font-medium text-gray-900 mb-6">
-            Welcome: <span>{user ? user.fullname : "Guest"}</span>
+          <h2 className="text-sm font-normal text-gray-900 mb-6">
+            Welcome:{" "}
+            <span className="text-red-600 text-sm font-normal ">Md Rimel</span>
           </h2>
         </div>
         <div className="flex gap-12">
@@ -108,7 +109,7 @@ const Account = () => {
                 <div className="grid grid-cols-2 gap-x-12 gap-y-4 ">
                   <div className="w-full text-start flex flex-col gap-4 ">
                     <label
-                      htmlFor="fullname"
+                      htmlFor="firstname"
                       className="text-base text-gray-600 font-normal"
                     >
                       First Name
@@ -132,7 +133,7 @@ const Account = () => {
                   </div>
                   <div className="w-full text-start flex flex-col gap-4 ">
                     <label
-                      htmlFor="fullname"
+                      htmlFor="lastname"
                       className="text-base text-gray-600 font-normal"
                     >
                       Last Name
