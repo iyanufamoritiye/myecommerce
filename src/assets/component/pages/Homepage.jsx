@@ -18,7 +18,7 @@ const Homepage = () => {
     <div className="  ">
       <Header wishlist={true} cart={true} account={true} />
 
-      <div className="w-screen px-24 sm:px-6 md:px-8  ">
+      <div className="w-screen px-24 sm:px-6 md:px-8 xs:px-4  ">
         <HeroSection />
         <FlashSales />
         <Categories />

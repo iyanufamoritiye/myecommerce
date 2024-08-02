@@ -17,7 +17,7 @@ const NewArrival = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-4 w-full h-[600px]   gap-6 text-white text-start">
+      <div className="grid grid-cols-4 w-full h-[600px] xs:grid-cols-1 sm:grid-cols-1 gap-6 text-white text-start">
         <div className="relative bg-black row-span-2 col-span-2  ">
           <img src={Ps5} alt="" className="absolute bottom-0 z-10 " />
           <div className="absolute z-50  bottom-0 p-6   ">

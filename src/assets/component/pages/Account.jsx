@@ -65,7 +65,7 @@ const Account = () => {
   return (
     <div>
       <Header wishlist={true} cart={true} account={true} />
-      <div className=" w-screen  text-start  mt-12 px-24 mb-28 sm:px-6 md:px-8">
+      <div className=" w-screen  text-start  mt-12 px-24 xs:px-4  mb-28 sm:px-6 md:px-8">
         <div className="flex justify-between">
           <div>
             <p className="mb-4 ">

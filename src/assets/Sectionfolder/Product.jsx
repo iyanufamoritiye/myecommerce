@@ -18,7 +18,7 @@ const Product = () => {
         <div className="h-8 w-4 bg-red-600 rounded-md"></div>
         <h3 className="text-base font-normal text-red-600">Our Products</h3>
       </div>
-      <div className=" flex items-center  justify-between mt-6 mb-10">
+      <div className=" flex items-center  justify-between mt-6 mb-10  xs:flex-col sm:flex-col">
         <h1 className="text-4xl text-start font-normal text-gray-950 ">
           Explore Our Products
         </h1>
@@ -31,7 +31,7 @@ const Product = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between  xs:flex-col sm:flex-col">
         <NewItemCard
           review={true}
           wishlist={true}
@@ -73,7 +73,7 @@ const Product = () => {
           ratingCount={145}
         />
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between xs:flex-col sm:flex-col">
         <NewItemCard
           review={true}
           wishlist={true}

@@ -6,7 +6,7 @@ const PageNotFound = () => {
   return (
     <div>
       <Header wishlist={true} cart={true} account={true} />
-      <div className=" w-screen h-screen  px-24 sm:px-6 md:px-8 ">
+      <div className=" w-screen h-screen  px-24 sm:px-6 md:px-8  xs:px-4  ">
         <div className="mt-12">
           <p className="mb-4 text-start">
             <span className="text-sm text-gray-500 font-normal mr-2">Home</span>

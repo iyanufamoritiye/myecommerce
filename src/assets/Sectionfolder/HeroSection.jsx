@@ -13,7 +13,7 @@ const HeroSection = () => {
     setImage(newImage);
   };
   return (
-    <div className="flex mb-28 z-0">
+    <div className="flex mb-28 z-0 xs:flex-col sm:flex-col">
       <div className=" h-[370px]  w-[200px] ">
         <ul className="flex flex-col gap-5  text-start font-normal text-base border-r pr-4 border-r-gray-300 ">
           <li className="flex justify-between  pt-8">

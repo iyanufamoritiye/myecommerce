@@ -10,7 +10,7 @@ import NewItemCard from "../Cardcomponent/NewItemCard";
 const ForYou = () => {
   return (
     <div className="mb-28">
-      <div className="text-start justify-between flex  mb-10 items-center">
+      <div className="text-start justify-between flex xs:flex-col sm:flex-col mb-10 items-center">
         <div className=" flex gap-2 items-center">
           <div className="h-8 w-4 bg-red-600 rounded-md"></div>
           <h3 className="text-base font-normal text-red-600">This Month</h3>
@@ -24,7 +24,7 @@ const ForYou = () => {
         </button>
       </div>
 
-      <div className="flex justify-between">
+      <div className="flex justify-between xs:flex-col sm:flex-col">
         <ItemCard
           review={true}
           discount={35}

@@ -52,7 +52,7 @@ const Login = () => {
   return (
     <div>
       <Header />
-      <div className=" w-screen  flex pr-24  mt-12 mb-28 sm:px-6 md:px-8">
+      <div className=" w-screen  flex pr-24  mt-12 mb-28 sm:px-6 md:px-8 xs:px-4 ">
         <div className="relative w-[805px] h-[781px] bg-[#CBE4E8] ">
           <img src={Beatsnoop} alt="" className="absolute bottom-0" />
         </div>

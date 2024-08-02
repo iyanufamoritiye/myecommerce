@@ -58,7 +58,7 @@ const Cart = () => {
   return (
     <div>
       <Header wishlist={true} cart={true} account={true} />
-      <div className=" w-screen text-start  pr-24 px-24  mt-12 mb-28 sm:px-6 md:px-8">
+      <div className=" w-screen text-start  pr-24 px-24 xs:px-4   mt-12 mb-28 sm:px-6 md:px-8">
         <div>
           <p className="mb-4">
             <span className="text-sm text-gray-500 font-normal mr-2">Home</span>
