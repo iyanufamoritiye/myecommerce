@@ -9,7 +9,7 @@ const Categories = () => {
         <div className="h-8 w-4 bg-red-600 rounded-md"></div>
         <h3 className="text-base font-normal text-red-600">Categories</h3>
       </div>
-      <div className=" flex items-center  justify-between mt-6 mb-10">
+      <div className=" flex items-center  justify-between mt-6 mb-10 xs:flex-col sm:flex-col xs:gap-2 xs:items-start sm:items-start">
         <h1 className="text-4xl text-start font-normal text-gray-950 ">
           Browse By Category
         </h1>
@@ -22,7 +22,7 @@ const Categories = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between mb-12 xs:flex-col sm:flex-col xs:items-center sm:items-center xs:mt-4">
+      <div className="flex justify-between lg:grid lg:grid-cols-3 lg:place-items-center md:grid-cols-3 md:place-items-center md:grid gap-y-8 mb-12 xs:flex-col xs:grid xs:grid-cols-2 xs:gap-2 xs:items-center sm:items-center xs:mt-4">
         <CategoryCard
           SvgIcon={
             <svg

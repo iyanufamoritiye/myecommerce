@@ -36,9 +36,9 @@ const About = () => {
             <span className="text-sm font-normal ">About</span>
           </p>
         </div>
-        <div className="mt-12  flex justify-between    ">
+        <div className="mt-12  flex justify-between  xs:flex-col md:flex-col md:gap-8  xs:gap-8 xs:w-full ">
           <div className="  flex flex-col justify-center    ">
-            <h1 className="text-[54px]  font-semibold font-poppins text-start ">
+            <h1 className="text-[54px] xs:text-3xl  sm:text-3xl font-semibold font-poppins text-start ">
               Our Story
             </h1>
             <p className="font-normal mt-6 text-base font-poppins text-start">
@@ -58,11 +58,14 @@ const About = () => {
               ranging from consumer.
             </p>
           </div>
-          <div className="-mr-24   w-1/2 ">
-            <img src={SideImage} alt="" />
+          <div className="-mr-24   w-1/2 xs:w-full md:w-full lg:w-full">
+            <img src={SideImage} alt="" className="" />
           </div>
         </div>
-        <div className="mt-28 mb-32 flex justify-between ">
+        <div
+          className="mt-28 mb-32 flex justify-between xs:flex-col xs:items-center xs:gap-4 md:grid md:grid-cols-2 
+        md:place-items-center md:gap-y-12    "
+        >
           <div className="flex flex-col  items-center gap-5 w-[250px] p-6 border-2 border-gray-200">
             <div className=" items-center  relative h-20 w-20 rounded-full bg-gray-200">
               <div className=" absolute bottom-3 left-3 h-14 w-14  rounded-full bg-gray-950">
@@ -212,7 +215,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-6 mb-12 ">
+        <div className="flex gap-6 mb-12  xs:flex-col xs:items-center  xs:w-full  ">
           {staffMembers.map((member, index) => (
             <StaffCard
               key={index}

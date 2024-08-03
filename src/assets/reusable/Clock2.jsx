@@ -46,9 +46,9 @@ const Clock2 = () => {
     return () => clearInterval(timerId);
   }, []);
   return (
-    <div className="flex items-center justify-start   gap-4 mt-8 ">
+    <div className="flex items-center justify-start   gap-4 mt-8 xs:justify-between xs:gap-2  ">
       <div
-        className="text-center flex flex-col items-center py-1
+        className="text-center flex flex-col items-center py-1 xs:px-4  
        gap-0 h-16 w-16 justify-center rounded-full bg-white"
       >
         <span className="block text-gray-950  font-bold">
@@ -58,7 +58,7 @@ const Clock2 = () => {
       </div>
 
       <div
-        className="text-center flex flex-col items-center py-1
+        className="text-center flex flex-col items-center py-1 xs:px-4  
        gap-0 h-16 w-16 justify-center rounded-full bg-white"
       >
         <span className="block text-gray-950  font-bold">
@@ -68,7 +68,7 @@ const Clock2 = () => {
       </div>
 
       <div
-        className="text-center flex flex-col items-center py-1
+        className="text-center flex flex-col items-center py-1  xs:px-4 
        gap-0 h-16 w-16 justify-center rounded-full bg-white"
       >
         <span className="block text-gray-950   font-bold">
@@ -78,7 +78,7 @@ const Clock2 = () => {
       </div>
 
       <div
-        className="text-center flex flex-col items-center py-1  
+        className="text-center flex flex-col items-center py-1  xs:px-4
        gap-0 h-16 w-16 justify-center rounded-full bg-white"
       >
         <span className="block text-gray-950   font-bold">

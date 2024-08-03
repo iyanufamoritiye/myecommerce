@@ -14,9 +14,11 @@ const FlashSales = () => {
         <div className="h-8 w-4 bg-red-600 rounded-md"></div>
         <h3 className="text-base font-normal text-red-600">Today’s</h3>
       </div>
-      <div className="flex items-center justify-between xs:flex-col sm:flex-col xs:justify-center sm:justify-center ">
-        <h1 className="text-4xl font-normal text-gray-950 ">Flash Sales</h1>
-        <Clock />
+      <div className="flex items-center justify-between xs:flex-col sm:flex-col xs:items-start sm:items-start ">
+        <h1 className="text-4xl xs:text-start font-normal text-gray-950 xs:mt-4  sm:mt-4">
+          Flash Sales
+        </h1>
+        <Clock className="xs:justify-center sm:justify-center " />
         <div className="flex gap-3">
           <div className="bg-gray-100 rounded-full  cursor-pointer hover:bg-gray-300   p-2">
             <FaArrowRight className="  h-3 w-3  " />
@@ -26,7 +28,10 @@ const FlashSales = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between xs:flex-col sm:flex-col xs:items-center sm:items-center xs:mt-4">
+      <div
+        className="flex justify-between xs:flex-col sm:flex-col xs:items-center 
+      sm:items-center xs:mt-4 md:grid-cols-2 md:grid md:mt-4 md:place-items-center   lg:grid lg:grid-cols-3 lg:place-items-center"
+      >
         <ItemCard
           review={true}
           wishlist={true}

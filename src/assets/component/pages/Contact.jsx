@@ -36,8 +36,8 @@ const Contact = () => {
             <span className="text-sm font-normal ">Cart</span>
           </p>
         </div>
-        <div className="flex    w-full justify-between mt-24 ">
-          <div className="flex flex-col justify-between  gap-6 w-80 p-8   shadow-md shadow-gray-200 rounded-lg">
+        <div className="flex  xs:flex-col xs:w-full xs:gap-6 md:flex-col md:w-full md:gap-8 lg:w-full lg:flex-col lg:gap-8 w-full justify-between mt-24 ">
+          <div className="flex flex-col justify-between xs:w-full md:w-full gap-6 w-80 p-8   shadow-md shadow-gray-200 rounded-lg">
             <div className="text-start border-b-2  border-b-gray-400">
               <div className="flex gap-4 items-center  mb-6">
                 <div className="bg-red-500 h-10 w-10 rounded-full  flex justify-center items-center">
@@ -81,9 +81,9 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="  bg-white p-5 rounded-lg    shadow-gray-200 shadow-md">
+          <div className="  bg-white p-5 rounded-lg xs:w-full   shadow-gray-200 shadow-md">
             <form onSubmit={formik.handleSubmit}>
-              <div className="flex   md:flex-row gap-4 mb-4">
+              <div className="flex xs:flex-col  md:flex-col  gap-4 mb-4">
                 <div className=" ">
                   <input
                     type="text"
@@ -133,14 +133,15 @@ const Contact = () => {
                   ) : null}
                 </div>
               </div>
-              <div className="mb-4">
+              <div className="mb-4 xs:w-full">
                 <textarea
                   name="message"
                   placeholder="Your Message"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.message}
-                  className=" bg-gray-100 p-6 font-medium text-sm focus:border-2 focus:border-gray-200  rounded-md w-[737px] h-[270px]    "
+                  className=" bg-gray-100 p-6 font-medium text-sm focus:border-2 focus:border-gray-200
+                    rounded-md w-[737px] h-[270px] xs:w-full md:w-full    "
                 ></textarea>
                 {formik.touched.message && formik.errors.message ? (
                   <div className="text-red-500 text-sm">

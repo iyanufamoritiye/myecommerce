@@ -125,7 +125,7 @@ const ItemCard = ({
           </div>
         )}
         {showPopupw && (
-          <div className="fixed inset-0 flex items-center z-50 justify-center bg-black bg-opacity-50">
+          <div className="fixed xs:w-screen inset-0 flex items-center z-50 justify-center bg-black bg-opacity-50">
             <div className="bg-white p-8 rounded shadow-lg">
               <p className="mb-4">Login now to add cart item</p>
               <button
@@ -165,7 +165,7 @@ const ItemCard = ({
 
         {isClicked && (
           <button
-            className="absolute  left-0 right-0  bottom-0 text-base  rounded-b-md w-full-left-2
+            className="absolute xs:w-full left-0 right-0  bottom-0 text-base  rounded-b-md w-full-left-2
            bg-gray-800 text-white py-2  "
             onClick={handleAddToCart}
           >

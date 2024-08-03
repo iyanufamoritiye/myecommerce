@@ -14,8 +14,8 @@ const HeroSection = () => {
   };
   return (
     <div className="flex mb-28 z-0 xs:flex-col sm:flex-col xs:items-center sm:items-center xs:mt-4">
-      <div className=" h-[370px]  w-[200px] ">
-        <ul className="flex flex-col gap-5  text-start font-normal text-base border-r pr-4 border-r-gray-300 ">
+      <div className=" h-[37rem]  w-[20rem ] xs:hidden md:hidden sm:hidden lg:hidden ">
+        <ul className="flex flex-col gap-5  sm:w-1/4  sm:mb-0 sm:pr-4 sm:border-r text-start font-normal text-base border-r pr-4 border-r-gray-300   ">
           <li className="flex justify-between  pt-8">
             <Link>Woman’s Fashion</Link>
             <IoIosArrowForward />
@@ -47,7 +47,7 @@ const HeroSection = () => {
           </li>
         </ul>
       </div>
-      <div className="flex relative  mt-8 ml-8 mb-4 bg-black  h-[370px] w-[900px] text-sm   pr-0">
+      <div className="flex relative xs:w-full xs:h-full md:ml-0 lg:ml-0 lg-w-full  md:w-full mt-8 ml-8 xs:ml-0 mb-4 bg-black  h-[370px] w-[900px] text-sm   pr-0">
         <div className=" w-[50%]  p-14 pr-0">
           <div className="flex items-center gap-4 mb-6  ">
             <ImAppleinc className="text-white h-16 w-12" />
@@ -68,7 +68,7 @@ const HeroSection = () => {
         <div className="w-full  ">
           <img src={Iphone} alt="" className="w-full h-5/6 mt-4" />
         </div>
-        <div class="absolute bottom-6 right-96 flex space-x-2">
+        <div class="absolute bottom-6 right-96 xs:right-24 flex space-x-2">
           {[" ", " ", " ", " ", " "].map((num, index) => (
             <button
               key={index}

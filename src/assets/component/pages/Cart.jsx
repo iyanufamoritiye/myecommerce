@@ -58,7 +58,7 @@ const Cart = () => {
   return (
     <div>
       <Header wishlist={true} cart={true} account={true} />
-      <div className=" w-screen text-start  pr-24 px-24 xs:px-4   mt-12 mb-28 sm:px-6 md:px-8">
+      <div className=" w-screen text-start  pr-24 px-24 xs:px-6    mt-12 mb-28 sm:px-6 md:px-8">
         <div>
           <p className="mb-4">
             <span className="text-sm text-gray-500 font-normal mr-2">Home</span>
@@ -92,14 +92,14 @@ const Cart = () => {
                   className="flex   border-2  px-12 items-center my-10   border-gray-200 shadow-md py-6 rounded-md"
                 >
                   <td className="w-[30%] text-start  ">
-                    <div className="flex relative items-center w-44 gap-4">
+                    <div className="flex relative items-center xs:flex-col xs:items-start xs:w-36  w-44 gap-4">
                       <img
                         src={product.imageSrc}
                         alt="product"
                         className="h-10 w-10"
                       />
 
-                      <span className="text-base font-normal">
+                      <span className="text-base font-normal xs:hidden">
                         {product.name}
                       </span>
                       <FaTimesCircle
@@ -132,19 +132,19 @@ const Cart = () => {
           <button
             onClick={handleContinueShopping}
             className="text-black text-base font-medium border-gray-300  border-2
-           hover:border-2 hover:border-gray-600  px-12 py-3 rounded-md "
+           hover:border-2 hover:border-gray-600   px-12 py-3 rounded-md "
           >
             Return To Shop
           </button>
           <button
             className="text-black text-base font-medium border-gray-300  border-2
-           hover:border-2 hover:border-gray-600  px-12 py-3 rounded-md "
+           hover:border-2 hover:border-gray-600  px-12 py-3 rounded-md xs:px-8 "
           >
             Update Cart
           </button>
         </div>
 
-        <div className="mt-16 flex justify-between items-start">
+        <div className="mt-16 flex justify-between xs:flex-col items-start">
           <div className="flex  gap-4 items-center    mb-4">
             <input
               type="text"
@@ -152,11 +152,11 @@ const Cart = () => {
               className="  px-4 py-3 border-gray-300 border rounded-sm"
               placeholder="Coupon code"
             />
-            <button className="bg-red-500   text-base font-medium text-white px-12 py-3 rounded-sm">
+            <button className="bg-red-500   xs:px-4 text-base font-medium text-white px-12 py-3 rounded-sm">
               Apply Coupon
             </button>
           </div>
-          <div className="w-[470px] h-[324px] border-2 border-gray-300 p-8 justify-between flex-col flex">
+          <div className="w-[470px] h-[324px] xs:w-full xs:p-4 border-2 border-gray-300 p-8 justify-between flex-col flex">
             <h3 className="text-xl font-bold">Cart Total</h3>
             <div className="flex justify-between pb-4 border-b-2 border-b-gray-300">
               <span className="text-base font-medium">Subtotal:</span>
@@ -177,7 +177,7 @@ const Cart = () => {
             <div className="w-full flex justify-center">
               <button
                 onClick={handleCheckout}
-                className="bg-red-500       text-white text-base font-medium px-12 py-3  rounded-sm"
+                className="bg-red-500   xs:px-8    text-white text-base font-medium px-12 py-3  rounded-sm"
               >
                 Proceed to checkout
               </button>

@@ -5,7 +5,7 @@ import { BiLogoLinkedin } from "react-icons/bi";
 
 const StaffCard = ({ imageSrc, name, position, ...props }) => {
   return (
-    <div className="w-[370px]  ">
+    <div className="w-[370px] xs:w-full ">
       <img
         src={imageSrc}
         alt="saff"
