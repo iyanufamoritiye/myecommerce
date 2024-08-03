@@ -6,14 +6,11 @@ import Pad2 from "../../images/Pad2.svg";
 import Pad3 from "../../images/Pad3.svg";
 import Pad4 from "../../images/Pad4.svg";
 import Pad5 from "../../images/Pad5.svg";
-import Gamepad from "../../images/Gamepad.svg";
-import Keyboard from "../../images/Keyboard.svg";
-import LCD from "../../images/LCD.svg";
-import RGBCooler from "../../images/RGBCooler.svg";
 
 import { FaRegHeart, FaStar, FaPlus, FaMinus } from "react-icons/fa";
-import ItemCard from "../../Cardcomponent/ItemCard";
+
 import { useNavigate } from "react-router-dom";
+import RelatedItem from "../../Sectionfolder/RelatedItem";
 
 const ProductDetails = ({ initialCount = 1, min = 1, max = 99, onChange }) => {
   // Example validation schema
@@ -47,16 +44,22 @@ const ProductDetails = ({ initialCount = 1, min = 1, max = 99, onChange }) => {
       <div className=" w-screen mt-12 mb-24 px-24 sm:px-6 md:px-8 xs:px-4 ">
         <div className="m">
           <p className="mb-4 text-start">
-            <span className="text-sm text-gray-500 font-normal mr-2">Home</span>
+            <span className="text-sm text-gray-500 font-normal mr-2">
+              Account
+            </span>
             <span className="text-sm text-gray-500 font-normal  mr-2">/</span>
-            <span className="text-sm font-normal ">Cart</span>
+            <span className="text-sm text-gray-500 font-normal mr-2">
+              Gaming
+            </span>
+            <span className="text-sm text-gray-500 font-normal  mr-2">/</span>
+            <span className="text-sm font-normal ">Havic HV G-92 Gamepad</span>
           </p>
         </div>
-        <div className="flex mb-24 mt-16 gap-12">
-          <div className="   flex   gap-4">
-            <div className="w-[170px]  flex flex-col gap-4">
+        <div className="flex mb-24 mt-16 gap-12 xs:flex-col md:flex-col lg:flex-col  ">
+          <div className="   flex   gap-4 xs:flex-col md:w-full lg:w-full ">
+            <div className="w-[170px]  flex flex-col gap-4 xs:grid xs:grid-cols-2 xs:w-full md:w-full lg:full">
               <div className="w-full h-[138px]  hover:scale-110 transform transition-transform duration-300  bg-gray-100 p-2 ">
-                <img src={Pad2} alt="gamepad" className="" />
+                <img src={Pad2} alt="gamepad" />
               </div>
               <div className="w-full h-[138px]  hover:scale-110 transform transition-transform duration-300  bg-gray-100 p-2">
                 <img src={Pad3} alt="gamepad" />
@@ -72,7 +75,7 @@ const ProductDetails = ({ initialCount = 1, min = 1, max = 99, onChange }) => {
             <img
               src={Pad1}
               alt=" gamepad"
-              className="w-[ px] h-[full x]     bg-gray-100 p-2"
+              className="  w-full   bg-gray-100 p-2"
             />
           </div>
           <div className="text-start">
@@ -168,11 +171,11 @@ const ProductDetails = ({ initialCount = 1, min = 1, max = 99, onChange }) => {
                 </button>
               </div>
             </div>
-            <div className="flex gap-6">
+            <div className="flex gap-6 xs:gap-0 xs:justify-between  ">
               <div className="flex rounded-md  ">
                 <button
                   onClick={handleDecrement}
-                  className=" text-2xl font-normal focus:outline-none border-2 rounded-s-md border-gray-300  px-2 py-1"
+                  className=" text-2xl xs:text-xl font-normal focus:outline-none border-2 rounded-s-md border-gray-300  px-2 py-1"
                 >
                   <FaMinus />
                 </button>
@@ -319,58 +322,7 @@ const ProductDetails = ({ initialCount = 1, min = 1, max = 99, onChange }) => {
             </div>
           </div>
         </div>
-        <div className="mb-28">
-          <div className="text-start flex gap-2 mb-12 items-center">
-            <div className="h-8 w-4 bg-red-600 rounded-md"></div>
-            <h3 className="text-base font-normal text-red-600">Related Item</h3>
-          </div>
-
-          <div className="flex justify-between">
-            <ItemCard
-              review={true}
-              wishlist={true}
-              discount={40}
-              imageSrc={Gamepad}
-              name=" HAVIT HV-G92 Gamepad"
-              price={120}
-              originalPrice={160}
-              rating={5}
-              ratingCount={88}
-            />
-            <ItemCard
-              review={true}
-              wishlist={true}
-              discount={40}
-              imageSrc={Keyboard}
-              name=" AK-900 Wired Keyboard"
-              price={960}
-              originalPrice={1160}
-              rating={4}
-              ratingCount={75}
-            />
-            <ItemCard
-              review={true}
-              wishlist={true}
-              discount={40}
-              imageSrc={LCD}
-              name="IPS LCD Gaming Monitor"
-              price={370}
-              originalPrice={400}
-              rating={5}
-              ratingCount={99}
-            />
-            <ItemCard
-              review={true}
-              wishlist={true}
-              imageSrc={RGBCooler}
-              name=" RGB liquid CPU Cooler"
-              price={160}
-              originalPrice={170}
-              rating={5}
-              ratingCount={65}
-            />
-          </div>
-        </div>
+        <RelatedItem />
       </div>
       <Footer />
     </div>

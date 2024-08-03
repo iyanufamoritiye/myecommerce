@@ -98,15 +98,15 @@ const Checkout = () => {
             </span>
             <span className="text-sm text-gray-500 font-normal  mr-2">/</span>
 
-            <span className="text-sm font-normal ">Cart</span>
+            <span className="text-sm font-normal ">Check Out</span>
           </p>
         </div>
         <h1 className="text-3xl text-start font-bold mb-9 ">Billing Details</h1>
-        <div className="flex justify-between">
+        <div className="flex justify-between xs:flex-col md:flex-col xs:w-full">
           <div className="  items-start">
             <form
               onSubmit={formik.handleSubmit}
-              className=" w-[470px] h-[814px] flex flex-col justify-between   "
+              className=" w-[470px] h-[814px] xs:w-full md:w-full flex flex-col justify-between   "
             >
               <div className="w-full text-start flex flex-col gap-4 ">
                 <label
@@ -282,7 +282,7 @@ const Checkout = () => {
               </div>
             </form>
           </div>
-          <div className="w-[527px] h-[136px] pt-12">
+          <div className="w-[527px] h-full xs:h-full md:h-full xs:w-full md:w-full  pt-12">
             {items.map((product) => (
               <div key={product.id} className="  w-4/5 mb-4 flex ">
                 <div className="flex w-full  items-center   gap-4">
@@ -298,7 +298,7 @@ const Checkout = () => {
                 <div className="mr-full flex items-center">{product.price}</div>
               </div>
             ))}
-            <div className="w-4/5">
+            <div className="w-4/5 xs:w-full md:w-full">
               <div className="flex justify-between pb-3 mt-3 border-b-2 border-b-gray-300">
                 <span className="text-base font-medium">Subtotal:</span>
                 <span className="text-base font-medium">${total}</span>
@@ -339,11 +339,14 @@ const Checkout = () => {
                   <img src={Nagad} alt="Nagad" className="  h-7 w-10 p-1" />
                 </div>
               </div>
-              <div className="text-start">
-                <input type="radio" c />
+              <div className="text-start mt-4">
+                <input
+                  type="radio"
+                  className="w-5 h-5 mr-2 items-center accent-black"
+                />
               </div>
             </div>
-            <div className="flex justify-between  items-center  mt-6   mb-4">
+            <div className="flex justify-between xs:w-full xs:flex-col   xs:items-start xs:gap-4 items-center  mt-6   mb-4">
               <input
                 type="text"
                 name="coupon"
@@ -363,7 +366,7 @@ const Checkout = () => {
                 onClick={formik.handleSubmit}
                 disabled={isSubmitting}
                 className="  bg-red-500 border-red-500 border  
-                 text-base font-medium text-white px-12 py-3 rounded-sm"
+                 text-base font-medium text-white px-12 xs:px-14 py-3 rounded-sm"
               >
                 {loading ? "Processing..." : "Place Order"}
               </button>

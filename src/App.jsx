@@ -39,7 +39,7 @@ function App() {
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="*" element={<PageNotFound />} />
-              <Route path="productdetails" element={<ProductDetails />} />
+              <Route path="/productdetails" element={<ProductDetails />} />
             </Routes>
           </Router>
         </AuthProvider>

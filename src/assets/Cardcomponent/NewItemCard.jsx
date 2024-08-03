@@ -104,6 +104,11 @@ const NewItemCard = ({
     e.stopPropagation();
     setShowColorOptions(!showColorOptions);
   };
+
+  const handleViewClick = () => {
+    navigate("/productdetails");
+  };
+
   return (
     <div
       className="relative bg-white  overflow-hidden w-64 mb-10 font-poppins"
@@ -165,7 +170,10 @@ const NewItemCard = ({
             </button>
           )}
           {review && (
-            <button className="bg-white rounded-full  active:bg-red-600  active:text-white hover:text-white hover:bg-red-600  p-2 shadow-md w-8 h-8">
+            <button
+              onClick={handleViewClick}
+              className="bg-white rounded-full  active:bg-red-600  active:text-white hover:text-white hover:bg-red-600  p-2 shadow-md w-8 h-8"
+            >
               <MdOutlineRemoveRedEye className="text-gray-800  active:text-white hover:text-white  " />
             </button>
           )}

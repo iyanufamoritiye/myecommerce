@@ -81,8 +81,8 @@ const Account = () => {
             <span className="text-red-600 text-sm font-normal ">Md Rimel</span>
           </h2>
         </div>
-        <div className="flex gap-12">
-          <div className="w-1/3">
+        <div className="flex xs:flex-col gap-12">
+          <div className="w-1/3 xs:w-5/6">
             <div className="mb-6">
               <h3 className="text-lg font-medium mb-6">Manage My Account</h3>
               <div className="pl-4 flex flex-col gap-4">
@@ -100,13 +100,13 @@ const Account = () => {
             </div>
             <h3 className="text-lg font-medium">My WishList</h3>
           </div>
-          <div className="p-12 shadow-lg   w-full">
+          <div className="p-12 shadow-lg xs:p-6  w-full">
             <h2 className="text-2xl font-medium  text-red-600 mb-6 ">
               Edit Your Profile
             </h2>
             <div>
               <form action="" onSubmit={formik.handleSubmit}>
-                <div className="grid grid-cols-2 gap-x-12 gap-y-4 ">
+                <div className="grid grid-cols-2 gap-x-12 xs:gap-x-6 gap-y-4 ">
                   <div className="w-full text-start flex flex-col gap-4 ">
                     <label
                       htmlFor="firstname"

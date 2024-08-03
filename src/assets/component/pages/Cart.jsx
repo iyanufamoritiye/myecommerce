@@ -76,7 +76,7 @@ const Cart = () => {
               )}
             </div>
           </div>
-          <table className="w-full text-start   ">
+          <table className="w-full xs:w-full text-start   ">
             <thead>
               <tr className=" flex      px-12 items-center border text-start border-gray-200 shadow-md py-6 rounded-md">
                 <th className="w-[30%] text-start  ">Product</th>
@@ -132,20 +132,20 @@ const Cart = () => {
           <button
             onClick={handleContinueShopping}
             className="text-black text-base font-medium border-gray-300  border-2
-           hover:border-2 hover:border-gray-600   px-12 py-3 rounded-md "
+           hover:border-2 hover:border-gray-600   px-12 py-3 rounded-md xs:px-4 "
           >
             Return To Shop
           </button>
           <button
             className="text-black text-base font-medium border-gray-300  border-2
-           hover:border-2 hover:border-gray-600  px-12 py-3 rounded-md xs:px-8 "
+           hover:border-2 hover:border-gray-600  px-12 py-3 rounded-md xs:px-4 "
           >
             Update Cart
           </button>
         </div>
 
-        <div className="mt-16 flex justify-between xs:flex-col items-start">
-          <div className="flex  gap-4 items-center    mb-4">
+        <div className="mt-16 flex justify-between xs:flex-col md:flex-col items-start">
+          <div className="flex  gap-4 items-center xs:w-full xs:flex-col   xs:items-start xs:gap-4  mb-4">
             <input
               type="text"
               name="coupon"

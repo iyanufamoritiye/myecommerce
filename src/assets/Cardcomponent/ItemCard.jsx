@@ -91,6 +91,11 @@ const ItemCard = ({
   const handleCardClick = () => {
     setIsClicked(!isClicked); // Toggle clicked state
   };
+
+  const handleViewClick = () => {
+    navigate("/productdetails");
+  };
+
   return (
     <div
       className="relative bg-white  overflow-hidden w-64 mb-10 font-poppins"
@@ -154,7 +159,10 @@ const ItemCard = ({
             </button>
           )}
           {review && (
-            <button className="bg-white rounded-full  active:bg-red-600  active:text-white hover:text-white hover:bg-red-600  p-2 shadow-md w-8 h-8">
+            <button
+              onClick={handleViewClick}
+              className="bg-white rounded-full  active:bg-red-600  active:text-white hover:text-white hover:bg-red-600  p-2 shadow-md w-8 h-8"
+            >
               <MdOutlineRemoveRedEye className="text-gray-800  active:text-white hover:text-white  " />
             </button>
           )}
