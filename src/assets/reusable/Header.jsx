@@ -159,11 +159,11 @@ const Header = ({ wishlist, cart, account }) => {
                     </li>
                     <li className="flex justify-between items-center  gap-1 text-sm font-normal   ">
                       <MdOutlineCancel className="h-8 w-8 p-1" />
-                      <Link to="/contact">My Cancellations</Link>
+                      <Link to="*">My Cancellations</Link>
                     </li>
                     <li className="flex justify-between items-center  gap-1  text-sm font-normal   ">
                       <FaRegStar className="h-8 w-8 p-1" />
-                      <Link to="/contact">My Reviews</Link>
+                      <Link to="*">My Reviews</Link>
                     </li>
                     <li className="flex justify-between items-center  gap-1  text-sm font-normal   ">
                       <LuUser className="h-8 w-8 p-1" />
