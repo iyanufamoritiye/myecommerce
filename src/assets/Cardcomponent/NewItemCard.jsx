@@ -176,7 +176,7 @@ const NewItemCard = ({
 
         {isClicked && (
           <button
-            className="absolute  left-0 right-0  bottom-0 text-base  rounded-b-md w-full-left-2
+            className="absolute  left-0 right-0  bottom-0 text-base  rounded-b-md w-full 
             bg-gray-800 text-white py-2  "
             onClick={handleAddToCart}
           >
