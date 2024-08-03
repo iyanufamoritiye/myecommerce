@@ -41,7 +41,7 @@ const Wishlist = () => {
               <p className="text-red-500">Your cart is empty.</p>
             )}
           </div>
-          <div className="grid grid-cols-4  md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-4 xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {items.map((product) => (
               <div className="relative" key={product.id}>
                 <ItemCard
