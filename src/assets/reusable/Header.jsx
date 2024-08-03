@@ -51,8 +51,8 @@ const Header = ({ wishlist, cart, account }) => {
   };
 
   return (
-    <div className=" w-screen  sm:px-8 md:px-12 xs:px-6 ">
-      <div className="text-sm flex gap-2  xs:flex-col justify-end  xs:px-0 py-4 px-24 bg-black">
+    <div className=" w-screen     ">
+      <div className="text-sm flex gap-2  xs:flex-col justify-end  xs:px-6 py-4 px-24 bg-black">
         <div className="flex xs:flex-col gap-4 text-center justify-end w-3/4 xs:w-full   ">
           <p className="font-normal text-white xs: ">
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
@@ -74,9 +74,9 @@ const Header = ({ wishlist, cart, account }) => {
         </div>
       </div>
       <div
-        className="flex  xs:flex-col xs:gap-4 xs:px-0 xs:py-4 sm:flex-col sm:gap-4 sm:px-0
-         sm:py-4 md:flex-col md:gap-4 md:px-0 md:py-4
-      md
+        className="flex  xs:flex-col xs:gap-4  xs:py-4 sm:flex-col sm:gap-4  
+         sm:py-4 md:flex-col md:gap-4  md:py-4
+       sm:px-8 md:px-12 xs:px-6 
       
       xs:pb-8   gap-32  pt-8 pb-3 border-b px-24   border-b-gray-300"
       >

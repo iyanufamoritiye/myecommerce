@@ -22,7 +22,7 @@ const Categories = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between lg:grid lg:grid-cols-3 lg:place-items-center md:grid-cols-3 md:place-items-center md:grid gap-y-8 mb-12 xs:flex-col xs:grid xs:grid-cols-2 xs:gap-2 xs:items-center sm:items-center xs:mt-4">
+      <div className="flex justify-between  md:grid-cols-3 md:place-items-center md:grid gap-y-8 sm:flex-col mb-12 xs:flex-col xs:grid xs:grid-cols-2 xs:gap-2 xs:items-center sm:items-center xs:mt-4">
         <CategoryCard
           SvgIcon={
             <svg
