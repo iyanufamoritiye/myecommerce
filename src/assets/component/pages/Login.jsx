@@ -52,17 +52,17 @@ const Login = () => {
   return (
     <div>
       <Header />
-      <div className=" w-screen  flex pr-24  mt-12 mb-28 sm:px-6 md:px-8 xs:px-4 ">
-        <div className="relative w-[805px] h-[781px] bg-[#CBE4E8] xs:hidden  ">
+      <div className=" w-screen  flex pr-24  mt-12 mb-28 sm:px-8md:px-12 xs:px-6 ">
+        <div className="relative w-[805px] h-[781px] bg-[#CBE4E8] xs:hidden md:hidden  ">
           <img src={Beatsnoop} alt="" className="absolute bottom-0" />
         </div>
         <div className=" text-start flex flex-col justify-center gap-8     ">
-          <div className=" ml-24 ">
+          <div className=" ml-24 xs:ml-0 ">
             <h1 className="text-4xl mb-6 font-medium">Log in to Exclusive</h1>
             <p className="text-base font-normal">Enter your details below</p>
           </div>
 
-          <div className="  ml-24 w-[370px] ">
+          <div className="  ml-24 w-[370px] xs:w-full xs:ml-0 ">
             <form
               onSubmit={formik.handleSubmit}
               className="flex-col flex gap-10  "
